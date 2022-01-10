@@ -1,19 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-   <HelloWorld :sentData="data"/>
-  </div>
+  <section>
+    <TheNavigation/>
+    <div class="home">
+      <Home :sentData="data"/>
+    </div>
+  </section>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Home from '@/components/Home.vue'
 import axios from "axios"
+import TheNavigation from "../components/TheNavigation.vue"
 
 export default {
-  name: 'Home',
+  name: 'Landing',
   components: {
-    HelloWorld
+    Home,
+    TheNavigation
   },
   data () {
     return {

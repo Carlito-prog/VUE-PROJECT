@@ -1,6 +1,5 @@
 <template>
-<main>
-  <TheNavigation/>
+<main class="main">
   <router-view/>
 </main>
 </template>
@@ -18,11 +17,14 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+background-color: #ffffff;
+background-image: linear-gradient(0deg, #ffffff 0%, #efe7fb 50%, #ffffff 100%);
+
+
+  
 }
 
 #nav {
